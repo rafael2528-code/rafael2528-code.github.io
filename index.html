@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- INFO1005 Website Design — Module 2.3 completed   example -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rafael – Engineering student portfolio and resume">
+  <meta name="author" content="Rafael">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS comes AFTER Bootstrap -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <title>Rafael | Engineering Portfolio</title>
+</head>
+
+<body>
+
+  <!-- MODULE 2.2 REVIEW — already complete -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        <img class="brand-img" src="img/rafael-profile.jpg" alt="Rafael icon"> Rafael
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar"
+        aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="portfolioNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Evidence</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf/rafael-dela-cruz-resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow">Responsive resume and portfolio</p>
+          <h1>Rafael</h1>
+          <p class="lead-intro">Engineering student focused on materials science, problem solving and professional
+            project delivery.</p>
+          <a class="btn custom-btn" href="pdf/rafael-dela-cruz-resume.pdf" target="_blank">Open resume PDF</a>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <img class="img-fluid hero-portrait" src="img/rafael-profile.jpg" alt="Rafael portrait">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container site-content">
+    <div class="row g-4">
+
+      <aside class="col-12 col-lg-4">
+        <section id="about" class="content-panel">
+          <h2>About Me</h2>
+          <img class="img-fluid profile-img" src="img/rafael-profile.jpg" alt="Rafael profile">
+          <p>Engineering student focused on materials science and practical problem-solving. Currently building
+            technical skills through university projects, lab work and professional portfolio development for the
+            engineering industry.</p>
+        </section>
+
+        <section id="skills" class="content-panel">
+          <h2>Skills</h2>
+
+          <div class="skill-item">
+            <p>Materials Analysis</p>
+            <div class="progress" role="progressbar" aria-label="Materials Analysis skill" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar visual" style="width: 85%">85%</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>Technical Report Writing</p>
+            <div class="progress" role="progressbar" aria-label="Technical Report Writing skill" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar story" style="width: 80%">80%</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>Problem Solving</p>
+            <div class="progress" role="progressbar" aria-label="Problem Solving skill" aria-valuenow="88"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar audience" style="width: 88%">88%</div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="col-12 col-lg-8">
+
+        <section id="experience" class="content-panel">
+          <h2>Education and Experience</h2>
+          <div class="timeline-item">
+            <h3>Engineering / Materials Science</h3>
+            <h4>Western Sydney University</h4>
+            <p>Currently studying engineering with a focus on materials science, including practical work in tensile
+              testing, crystal structures, and technical report writing.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Academic Projects</h3>
+            <h4>University Assessments</h4>
+            <p>Completed technical reports, data analysis, presentations and group practical work related to materials
+              properties and engineering problem-solving.</p>
+          </div>
+        </section>
+
+
+        <section id="projects" class="content-panel">
+  <h2>Project Highlights</h2>
+  <p>Selected university projects demonstrating technical and analytical skills.</p>
+
+  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="img/html-validation-project-screenshot.png" class="d-block w-100 carousel-img" alt="HTML validation results">
+        <div class="carousel-caption">
+          <h3>HTML Validation Project</h3>
+          <p>Fixed structural errors across multiple HTML files and achieved full W3C validation.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/website-analysis-project-screenshot.png" class="d-block w-100 carousel-img" alt="Website analysis colour and typography plan">
+        <div class="carousel-caption">
+          <h3>Website Analysis & Planning</h3>
+          <p>Researched industry websites and developed a colour, typography and content plan.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+      <section id="portfolio" class="content-panel">
+  <h2>Portfolio Cards</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card h-100 portfolio-card">
+        <img src="img/html-validation-project-screenshot.png" class="card-img-top" alt="HTML validation results">
+        <div class="card-body">
+          <h3 class="card-title">HTML Validation Project</h3>
+          <p class="card-text">Fixed structural and validation errors across multiple HTML files to meet W3C standards.</p>
+          <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal1">Read project brief</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 portfolio-card">
+        <img src="img/website-analysis-project-screenshot.png" class="card-img-top" alt="Website analysis plan">
+        <div class="card-body">
+          <h3 class="card-title">Website Analysis & Planning</h3>
+          <p class="card-text">Analysed industry websites and created a colour, typography and content strategy for an engineering portfolio.</p>
+          <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal2">Read project brief</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section id="evidence" class="content-panel">
+        <h2>Evidence and Reflection</h2>
+        <p>The accordion lets you organise longer process evidence without displaying everything at once.</p>
+
+        <div class="accordion" id="evidenceAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Project Approach
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#evidenceAccordion">
+              <div class="accordion-body">
+                I start by understanding the problem requirements, collect data from testing or research, then analyse
+                results and present clear findings in a professional format.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Technical Skills Developed
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+              <div class="accordion-body">
+                Gained experience in materials testing, data analysis, technical report writing, and presenting
+                engineering concepts clearly.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Career Focus
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+              <div class="accordion-body">
+                Building a strong foundation in materials science and engineering problem-solving to prepare for roles
+                in the construction and engineering industry.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+    </div>
+  </main>
+
+  <!-- STEP 3 CONTINUED — MODAL -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="projectModalLabel1">HTML Validation Project</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Worked as part of a group to inspect, correct and validate three HTML files. Identified structural issues, fixed tags, headings and encoding problems, then revalidated all files with the W3C HTML Validator until they passed with zero errors.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="projectModalLabel2">Website Analysis & Planning</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Researched professional engineering websites in the civil and construction sector. Analysed purpose, audience, visual design and industry conventions, then developed a colour palette, typography and content plan tailored for an engineering portfolio.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Rafael – Engineering student portfolio | INFO1005</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript powers navbar, carousel, modal and accordion. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
